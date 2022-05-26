@@ -1,0 +1,13 @@
+.navbar-button {
+    font-size: 45px;
+    color: #4d4d4d;
+    border: none;
+    background: none;
+}
+.button-hover:hover {
+    color: orange;
+}
+
+.navbar-background {
+    background-color: rgb(240, 233, 225);
+}

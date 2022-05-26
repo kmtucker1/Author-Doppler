@@ -1,0 +1,46 @@
+<div class="container-fluid bg-color min-vh-100 ">
+    <app-navbar></app-navbar>
+    <div class="container">
+        <div class="row">
+            <div class="col-6 title-text">
+                Author Doppler
+            </div>
+        </div>
+        <div class="row">
+            <div class="col-8 introduction-text">
+                You can provide Author Doppler with text from your previous work or press
+                the button below to get a random writing prompt to start writing some fresh material.
+                The more words you provide, the more accurate the results will be. We recommend providing at least
+                (number)
+                words
+            </div>
+        </div>
+
+        <div class="row mb-2 ">
+            <div class="col-2">
+                <button class="btn writing-prompt-button button-hover" (click)="getRandomWritingPrompt()">Give me a
+                    prompt</button>
+            </div>
+            <div class="col-10">
+                {{writingPrompt}}
+            </div>
+        </div>
+
+        <!-- text form -->
+        <div class="row">
+            <form [formGroup]="textForm">
+                <textarea class="col-12" rows="10" type="text" formControlName="text"> </textarea>
+            </form>
+            <div class="row">
+                <div class="col">
+                    Words: {{wordCount}}
+                </div>
+                <div class="col text-end">
+                    <button class="btn submit-button button-hover" (click)="sendTextToService()"
+                    routerLink="/results-page">submit</button>
+                </div>
+            </div>
+        </div>
+    </div>
+</div>
+<app-footer class="mt-auto bg-color"></app-footer>

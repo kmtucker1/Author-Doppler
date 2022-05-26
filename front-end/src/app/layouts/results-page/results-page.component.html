@@ -1,0 +1,50 @@
+<div class="container-fluid bg-color min-vh-100">
+    <app-navbar></app-navbar>
+    <div class="container">
+        <div class="row">
+            <div class="col-7 title-text ">
+                Author Doppler
+            </div>
+        </div>
+        <!--
+        <div class="row mt-3 mb-3 introduction-text">
+            Nice to hear from you again {{DoppelResult.authors[0].display_name}}
+        </div>
+        -->
+        <div class="row mt-3 mb-3 introduction-text">
+            Based on the state-of-the-art Authorship Attribution models, your writing resembles that of:
+        </div>
+        <div class="row mt-2 mb-2">
+            <div *ngFor="let author of DoppelResult.authors">
+                <div class=" row author-box pt-3 pb-2 mt-2 mb-2">
+                    <div class="text-hover author-name col-4">
+                    <a href='{{author.author_wikipedia_url}}'>
+                        <h3>{{author.display_name}}</h3>
+                    </a>
+                </div>
+                
+                <div class="col-8">
+                    <div class="flex-container d-flex justify-content-around">
+                    <div class="col-1" *ngFor="let book of author.books">
+                        
+                            <a href="https://www.qries.com/">
+                                <img src='assets/{{book.book_path}}' alt=""
+                                    onerror="this.src='assets/books/2061/Carmilla.jpg'" width="66" height="98" />
+                                    {{book.book_title}}
+                            </a>
+                        
+                    </div>
+                    <div class="col-2">
+                        <div class="row mt-3"></div>
+                        <div type="button" class=" mt-2 btn writing-prompt-button button-hover">
+                            more books from this author
+                        </div>
+                    </div>
+                </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+</div>
+<app-footer class="mt-auto"></app-footer>

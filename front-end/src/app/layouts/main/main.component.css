@@ -1,0 +1,28 @@
+.main-introduction-text {
+    border-style: none none solid none;
+    border-color:rgb(0, 0, 0);
+    font-size: 74px;
+    color: #353434;
+    font-weight: 900;
+}
+
+.begin-button {
+    background-color: #353434;
+    color: rgb(246, 243, 240);
+    font-size: 45px;
+    border-radius: 5px
+}
+.begin-button-hover:hover {
+    background-color: orange;
+    color: #353434;
+}
+.main-background {
+    background-color: rgb(240, 233, 225);
+}
+.text-hover:hover {
+    color: orange;
+}
+.main-text {
+    color: #353434;
+    font-size: 50px;
+}

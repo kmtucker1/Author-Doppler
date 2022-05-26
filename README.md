@@ -1,1 +1,1 @@
-"# Author-Doppler" 
+# AuthorDoppler

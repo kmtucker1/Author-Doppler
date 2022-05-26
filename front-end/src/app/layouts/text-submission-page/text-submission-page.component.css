@@ -1,0 +1,41 @@
+.title-text {
+    border-style: none none solid none;
+    border-color:rgb(0, 0, 0);
+    font-size: 74px;
+    color: #353434;
+    font-weight: 900;
+}
+
+.introduction-text {
+    font-size: 25px;
+    color: #353434;
+    font-weight: 500;
+}
+
+.writing-prompt-button {
+    background-color: #353434;
+    color: rgb(246, 243, 240);
+    font-size: 20px;
+    font-weight:600;
+    border-radius: 5px
+}
+
+.button-hover:hover {
+    background-color: orange;
+    color: #353434;
+}
+.bg-color {
+    background-color: rgb(240, 233, 225);
+}
+
+.submit-button {
+    background-color: #353434;
+    color: rgb(246, 243, 240);
+    font-size: 20px;
+    font-weight:600;
+    border-radius: 5px
+}
+
+.writing-prompt-box {
+    border-style: groove groove groove groove;
+}
